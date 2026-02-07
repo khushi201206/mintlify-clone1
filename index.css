@@ -30,7 +30,7 @@ body {
     padding: 0 32px;
     font-size: 14px;
     backdrop-filter: blur(10px);
-     background: rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.04);
     /* the swtch btw black and white  */
     mix-blend-mode: difference;
 }
@@ -231,16 +231,31 @@ a {
     justify-content: center;
     margin-top: 80px;
     width: fit-content;
-    /* shrink to image width */
     overflow: hidden;
-    /* 🔑 clips image */
     border-radius: 28px;
-    /* adjust: 20 / 24 / 32 */
 }
 
 .img img {
     display: block;
-    /* removes bottom gap */
     width: 1100px;
     height: auto;
+}
+
+.logogrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 60px;
+    align-items: center;
+    justify-items: center;
+    padding: 40px;
+    max-width: 1000px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logogrid img {
+    width: 100%;
+    max-height: 40px;
+    object-fit: contain;
+
 }
