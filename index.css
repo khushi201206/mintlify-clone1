@@ -1,0 +1,246 @@
+* {
+    padding: 0px;
+    box-sizing: 0px;
+    margin: 0px;
+    font-family: Arial;
+    font-weight: 500;
+    color: white;
+}
+
+body {
+    background-image: url(https://www.mintlify.com/hero/bg-light.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    isolation: isolate;
+    /* for sticking nav bar ,used blended one so thta it doesnt have weired cldr */
+}
+
+.nav {
+    /* background-color: lab(31 -13.26 -21.26); */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 2rem;
+    align-items: center;
+    height: 64px;
+    padding: 0 32px;
+    font-size: 14px;
+    backdrop-filter: blur(10px);
+     background: rgba(255, 255, 255, 0.04);
+    /* the swtch btw black and white  */
+    mix-blend-mode: difference;
+}
+
+/* logo transition corrwctly */
+.nav .logo {
+    mix-blend-mode: difference;
+    /* filter: invert(1); */
+}
+
+
+.child2 {
+    display: flex;
+    word-spacing: 10px;
+    font-size: 30;
+    gap: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.child3 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    button {
+        padding: 8px 14px;
+        border-radius: 9999px;
+        border: none;
+    }
+}
+
+.button2 {
+    background-color: white;
+    color: rgb(11, 0, 0);
+}
+
+.button1 {
+    background: transparent;
+    border: 1px solid currentColor;
+    /* border also adapts */
+    padding: 8px 14px;
+    border-radius: 9999px;
+
+    color: white;
+    /* base color */
+    mix-blend-mode: difference;
+    /* 🔥 this does the magic */
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    /* space below navbar */
+}
+
+.nav2 {
+    height: 27px;
+    padding: 6px 8px 6px 14px;
+    background-color: lab(32 -13.33 -21.83);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    /* gap:5px; */
+    border-radius: 1000px;
+    border: none;
+}
+
+.badge {
+    background-color: lab(51 -41.57 15.36);
+    height: 20px;
+    width: 43px;
+    border-radius: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+    margin-left: -10px;
+}
+
+.arrow {
+    width: 15px;
+    background-color: white;
+    color: lab(30 -11.58 -22.89);
+    height: 15px;
+    border-radius: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+    margin-left: 15px;
+}
+
+.text {
+    background-color: lab(30 -11.58 -22.89);
+    margin-left: 5px;
+}
+
+.headline {
+    margin-top: 40px;
+    font-size: 60px;
+    /* big font */
+    text-align: center;
+    /* center horizontally */
+    font-weight: bold;
+    /* optional bold */
+    line-height: 1.2;
+
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    /* full screen height */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* horizontal center */
+    align-items: center;
+    /* vertical center */
+    text-align: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+
+    /* Background with gradient overlay */
+    background:
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 100%),
+        url('cloud-sky.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.disc {
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.email-container {
+    margin-top: 32px;
+    padding: 4px;
+
+    max-width: 360px;
+
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    border-radius: 9999px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+}
+
+.in {
+    flex: 1;
+    padding: 0px 12px;
+    background: transparent;
+    border: none;
+    outline: none;
+    line-height: 1.5;
+    color: #ffffff;
+    font-size: 15px;
+    width: 100%;
+}
+
+.in::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+}
+
+.start {
+    padding: 0 20px;
+    background-color: white;
+    border-radius: 999px;
+    color: lab(49 -14.01 -16.68);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-right: 2px;
+    width: 100px;
+    transition: background-color 0.1s ease;
+    height: 30px;
+}
+
+.img {
+    margin: 80px auto 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    width: fit-content;
+    /* shrink to image width */
+    overflow: hidden;
+    /* 🔑 clips image */
+    border-radius: 28px;
+    /* adjust: 20 / 24 / 32 */
+}
+
+.img img {
+    display: block;
+    /* removes bottom gap */
+    width: 1100px;
+    height: auto;
+}
